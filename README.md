@@ -1,7 +1,7 @@
 # MrRobotMindSet
 ![imagemK](https://www.popsci.com/wp-content/uploads/2019/03/18/S3DRMZUTOSHIE55O5I62C2NVGE.jpg?quality=85&w=2560)
 
-Bem-vindo ao MrRobotMindSet, um repositório dedicado ao meu estudo de hacking, focado em técnicas como MITRE ATT&CK, truques de hacking, engenharia social, Deep Web, e muito mais. Aqui, você encontrará minhas anotações e cheatsheets sobre diversas táticas e ferramentas utilizadas por hackers, além de insights sobre como proteger sistemas e redes.
+Bem-vindo ao MrRobotMindSet, um repositório dedicado ao meu estudo de hacking, focado em técnicas como MITRE ATT&CK, truques de hacking, engenharia social, Deep Web, e muito mais. Aqui, você encontrará minhas anotações e cheatsheets sobre diversas táticas e ferramentas utilizadas por hackers.
 Objetivo
 
 Este repositório serve como uma coleção das minhas anotações e descobertas sobre hacking, tanto para aprendizado pessoal quanto para referência. Ele contém tópicos que vão desde técnicas avançadas de exploração de vulnerabilidades até estudos sobre engenharia social e a exploração de redes na Deep Web.
