@@ -1,7 +1,7 @@
-# MrRobotMidSet
+# MrRobotMindSet
 ![Logo do MITRE ATT&CK]([https://example.com/mitre-attack-logo.png](https://www.popsci.com/wp-content/uploads/2019/03/18/S3DRMZUTOSHIE55O5I62C2NVGE.jpg?quality=85&w=2560))
 
-Bem-vindo ao **MrRobotMidSet**, um repositório dedicado ao meu estudo de hacking, focado em técnicas como MITRE ATT&CK, hacking tricks, engenharia social, Deep Web, e muito mais. Aqui, você encontrará minhas anotações e cheatsheets sobre diversas táticas e ferramentas utilizadas por hackers, além de insights sobre como proteger sistemas e redes.
+Bem-vindo ao **MrRobotMindSet**, um repositório dedicado ao meu estudo de hacking, focado em técnicas como MITRE ATT&CK, hacking tricks, engenharia social, Deep Web, e muito mais. Aqui, você encontrará minhas anotações e cheatsheets sobre diversas táticas e ferramentas utilizadas por hackers, além de insights sobre como proteger sistemas e redes.
 
 ## Objetivo
 
