@@ -1,5 +1,3 @@
-Introdução Robusta ao MITRE ATT&CK
-
 O MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) é um framework amplamente utilizado para descrever as ações e comportamentos de adversários durante um ataque cibernético. Criado pela MITRE Corporation, esse modelo é fundamental para a cibersegurança, permitindo uma análise detalhada das táticas, técnicas e procedimentos (TTPs) usados pelos invasores. Ele fornece um vocabulário comum para a comunidade de segurança cibernética, ajudando a mapear ataques, entender adversários e desenvolver estratégias de defesa.
 O que é o MITRE ATT&CK?
 
